@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="507.0" prefWidth="591.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.2" fx:controller="com.example.analyzer.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+   <AnchorPane prefHeight="589.0" prefWidth="561.0">
+      <children>
+         <Button fx:id="button" layoutX="27.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#onHelloButtonClick" text="Vybrat soubor" />
+         <BarChart fx:id="graf" layoutX="-24.0" layoutY="68.0">
+           <xAxis>
+             <CategoryAxis side="BOTTOM" />
+           </xAxis>
+           <yAxis>
+             <NumberAxis side="LEFT" />
+           </yAxis>
+         </BarChart>
+      </children>
+   </AnchorPane>
+</VBox>
